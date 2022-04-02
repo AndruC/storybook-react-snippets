@@ -5,7 +5,17 @@
             "import React from 'react';",
             "import { ComponentStory, ComponentMeta } from '@storybook/react';",
             "",
-            "import { MyComponent } from './MyComponent';",
+            "// You are free to port this component into a new file at any time.",
+            "",
+            "interface Props {",
+            "    backgroundColor: { control: string };",
+            "}",
+            "",
+            "function NewComponent(props: Props) {",
+            "    return (",
+            "        <div></div>",
+            "    )",
+            "}",
             "",
             "// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export",
             "export default {",
@@ -30,4 +40,4 @@
         ],
         "description": "React Typescript StoryBook Component"
     }
-}
+} 
